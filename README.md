@@ -1,0 +1,3 @@
+# Parking-Lot Management App
+
+This web application allows users to manage vehicle entries and exits in a parking lot efficiently. Featuring real-time license plate recognition powered by OCR, it automatically logs vehicle entry and exit times, calculates parking durations, and provides the applicable fare based on customizable parking rates. The app also includes user-friendly interfaces for registering vehicles, viewing current parking lot activity, and handling different customer types (regular, local, handicap). Built with Next.js, it ensures fast and responsive performance, and is deployable on Vercel for seamless management.
