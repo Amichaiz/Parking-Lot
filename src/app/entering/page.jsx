@@ -101,7 +101,9 @@ export default function EnteringPage() {
           <Image
             src={uploadedImageUrl}
             alt="Uploaded vehicle"
-            className="w-64 h-64 object-contain border"
+            width={300}
+            height={200}
+            className="object-contain"
           />
         </div>
       )}

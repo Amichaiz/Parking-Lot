@@ -1,15 +1,14 @@
 // utils/googleVision.js
 const vision = require('@google-cloud/vision');
-const fs = require('fs');
-const path = require('path');
-const tempFilePath = path.join(process.cwd(), 'temp_secret.json');
 
-fs.writeFileSync(tempFilePath, process.env.JSON_SECRET);
 
+const jsonString = process.env.JSON_SECRET;
+
+const jsonObject = JSON.parse(jsonString);
 
 // Creates a client
 const client = new vision.ImageAnnotatorClient({
-    keyFilename: tempFilePath, // Use the temp file path
+    credentials: jsonObject
 });
 
 async function detectLicensePlate(fileBuffer) {
