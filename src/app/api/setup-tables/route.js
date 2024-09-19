@@ -1,5 +1,5 @@
-import pool from '@/utils/neondb';
-/*
+/*import pool from '@/utils/neondb';
+
 export async function GET(req, res) {
     try {
         const client = await pool.connect();

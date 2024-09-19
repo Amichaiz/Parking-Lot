@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Modal from "@/app/components/Modal"; // Import the modal component
+import Image from "next/image";
 
 export default function EnteringPage() {
   const [licensePlate, setLicensePlate] = useState("");
@@ -97,7 +98,7 @@ export default function EnteringPage() {
       {loading && <p>Processing image...</p>}
       {uploadedImageUrl && (
         <div className="mt-5">
-          <img
+          <Image
             src={uploadedImageUrl}
             alt="Uploaded vehicle"
             className="w-64 h-64 object-contain border"

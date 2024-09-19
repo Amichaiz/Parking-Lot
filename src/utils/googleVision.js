@@ -6,9 +6,6 @@ const tempFilePath = path.join(process.cwd(), 'temp_secret.json');
 
 fs.writeFileSync(tempFilePath, process.env.JSON_SECRET);
 
-const fileContent = fs.readFileSync(tempFilePath, 'utf8');
-console.log('File contents:', fileContent);
-
 
 // Creates a client
 const client = new vision.ImageAnnotatorClient({
