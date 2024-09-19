@@ -41,7 +41,6 @@ export default function EnteringPage() {
           // Get current time for entering timestamp
           const currentTime = new Date().toLocaleString();
           setEnterTime(currentTime);
-          alert(currentTime);
           // Save the data to the DB
           saveToDB(extractedPlate, currentTime);
         } else {

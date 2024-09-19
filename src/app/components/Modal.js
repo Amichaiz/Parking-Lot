@@ -28,7 +28,7 @@ export default function LeavingModal({ licensePlate, enterTime, leaveTime, parki
                 {enterTime && <p>Entered at: {formatTime(enterTime)}</p>}
                 {leaveTime && <p>Left at: {formatTime(leaveTime)}</p>}
                 {parkingDuration && <p>Parking Duration: {(parkingDuration / 60).toFixed(2)} Hours</p>}
-                <p className="text-xl font-bold mt-4">Total Fare: ${fare}</p>
+                {(fare || fare == 0) && <p className="text-xl font-bold mt-4">Total Fare: ${fare}</p>}
                 <button
                     className="mt-5 bg-blue-500 text-white px-4 py-2 rounded"
                     onClick={onClose}
