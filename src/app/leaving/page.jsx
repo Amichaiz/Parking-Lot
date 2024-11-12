@@ -86,7 +86,7 @@ export default function LeavingPage() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+    <div className="flex flex-col items-center justify-center  min-h-96 bg-gray-100 ">
       <h1 className="text-2xl font-bold mb-5">Car Leaving</h1>
       <input
         type="file"

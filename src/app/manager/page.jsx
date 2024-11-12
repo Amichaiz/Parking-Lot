@@ -42,7 +42,7 @@ export default function ManagerPage() {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+    <div className="flex flex-col items-center justify-center bg-gray-100">
       <h1 className="text-2xl font-bold mb-5">Manager Dashboard</h1>
 
       {error && <p className="text-red-500 mb-5">{error}</p>}

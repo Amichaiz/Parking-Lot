@@ -9,7 +9,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="min-h-screen bg-gray-100 overflow-hidden">
+      <body className="min-h-screen bg-gray-100">
         {/* Add a navigation bar with a link to the homepage */}
         <header className="bg-gray-800 text-white p-4">
           <div className="container mx-auto">

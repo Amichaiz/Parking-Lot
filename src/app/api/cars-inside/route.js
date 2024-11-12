@@ -8,6 +8,7 @@ export async function GET() {
       SELECT plate, entered_at 
       FROM vehicles 
       WHERE leaving_at IS NULL
+      ORDER BY vehicles.entered_at DESC
     `);
 
         const carsInside = result.rows;

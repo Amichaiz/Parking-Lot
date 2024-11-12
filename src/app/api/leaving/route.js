@@ -13,7 +13,7 @@ export async function POST(req) {
           FROM vehicles v
           LEFT JOIN registered r ON v.plate = r.plate
           WHERE v.plate = $1 AND v.leaving_at IS NULL
-          ORDER BY v.entered_at ASC
+          ORDER BY v.entered_at DESC
           LIMIT 1;
         `;
         const findCarValues = [plate];
