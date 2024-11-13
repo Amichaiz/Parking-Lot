@@ -57,9 +57,13 @@ export default function ManagerPage() {
             carsInside.map((car) => (
               <li key={car.plate} className="border-b py-2">
                 {car.plate} (Entered at:{" "}
-                {new Date(car.entered_at).toLocaleTimeString([], {
+                {new Date(car.entered_at).toLocaleString("en-US", {
+                  year: "numeric",
+                  month: "2-digit",
+                  day: "2-digit",
                   hour: "2-digit",
                   minute: "2-digit",
+                  hour12: true, // Ensures 12-hour format (AM/PM)
                 })}
                 )
               </li>
