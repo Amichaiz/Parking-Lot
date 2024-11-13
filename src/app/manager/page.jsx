@@ -58,7 +58,7 @@ export default function ManagerPage() {
               <li key={car.plate} className="border-b py-2">
                 {car.plate} (Entered at:{" "}
                 {new Date(car.entered_at).toLocaleString("en-US", {
-                  timeZone: "Europe/Berlin",
+                  timeZone: "Asia/Jerusalem",
                   year: "numeric",
                   month: "2-digit",
                   day: "2-digit",
