@@ -10,7 +10,9 @@ export default function ManagerPage() {
     // Fetch cars currently inside
     async function fetchCarsInside() {
       try {
-        const res = await fetch("/api/cars-inside");
+        const res = await fetch("/api/cars-inside", {
+          method: "POST", // Change to POST to match the API route
+        });
         const data = await res.json();
         if (res.ok) {
           setCarsInside(data.carsInside);
