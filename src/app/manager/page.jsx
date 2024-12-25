@@ -11,7 +11,7 @@ export default function ManagerPage() {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    if (username === "maayan" && password === "i love matar") {
+    if (username === "admin" && password === "admin") {
       setIsAuthenticated(true);
     } else {
       alert("Invalid username or password");
