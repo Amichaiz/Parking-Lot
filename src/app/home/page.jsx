@@ -4,7 +4,9 @@ import Rates from "@/app/components/Rates";
 export default function HomePage() {
   return (
     <div className="relative flex flex-col items-center justify-center  min-h-96">
-      <h1 className="text-4xl font-bold mb-10">Parking Lot Management</h1>
+      <h1 className="text-4xl font-bold mb-10">
+        Parking Lot <Link href="/manager">Management</Link>{" "}
+      </h1>
 
       {/* Flex container for Entering and Leaving buttons */}
       <div className="flex space-x-4">
